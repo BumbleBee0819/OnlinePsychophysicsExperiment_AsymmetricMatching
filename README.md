@@ -10,4 +10,4 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 
 ## Usage
 1. Experimental Interface
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/BumbleBee0819/Online_AsymmetricMatchingExperiment/tree/master/img/demo.gif)
