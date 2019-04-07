@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Asymmetric Matching Experiment</title>
+    <meta charset="utf-8">
+    <meta name="author" content="wb1918a@american.edu">
+    <meta name="keywords" content="psychophysics, asymmetric matching experiment">
+    <meta name="description" content="This page is the symmetric Experimental interface for images">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!-- Google Font -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" />     
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/Experiment.css?v={random number/string}" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" />
+    <!--  -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"> </script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>   
+</head>
+<body>
+      <!--====== Instruction: Pop-up box ======-->   
+    <div class="popup-overlay">
+       <div id="popup-content" class="popup-content">
+       <p> Your task is to match the material properties of the soap in the right image to the left. To do so, you adjust the "opacity" of the object in the right image (match) to match the perceived translucency to the object on the left (target). Notice that from trial to trial, the lighting direction can change (either side-lit or back-lit).<br>You can use either the left and right arrow keys or the slider to adjust the match image. PLEASE DON'T USE BOTH WITHIN THE SAME TRIAL. The left arrow key makes the object appear less opaque and the right key makes the object appear more opaque. Please examine the images carefully before you hit "Next" button when your match will be recorded. </p>
+       <button id="close" class="close"> Close </button>
+       </div>
+       </div>
+    
+    <div class = "main_contents">
+     
+       <button id="showInstruction" class="showInstruction"> Show Instruction </button>
+
+      <!--====== In-line Instruction ======-->
+       <div id="instruction" class="instruction">
+           <h1>Material Matching Experiment</h1>
+           <p>The soap in the images are made with diffferent materials. Your task is to match the material properties of the soap in the right image to the left. To do so, you adjust the "opacity" of the object in the right image (match) to match the perceived translucency to the object on the left (target). Notice that from trial to trial, the lighting direction can change (either side-lit or back-lit).<br><br>You can use either the left and right arrow keys or the slider to adjust the match image.PLEASE don't use both within the same trial. The left arrow key makes the object appear less opaque and the right key makes the object appear more opaque. Please examine the images carefully before you hit "Next" button when your match will be recorded. Notice, there will be four blocks of the experiment. Please press "start" button to start the trials. </p>
+        </div>
+        
+        <!--====== Show paired image stimuli ======-->
+        <div class="img">
+<!--
+               The demo in the instruction page  
+           <div class="vid-border">
+               <video id="demo" autoplay loop>
+                   <source src="img/demo.mov" type="video/mp4">
+               </video>
+           </div>
+           
+-->
+           <!--   Paired stimuli  -->
+           <table id = "img_table" class="img_table">
+               <tr>
+               <td><b>Target</b></td>
+               <td><b>Match</b></td>
+               </tr>
+               
+               <tr>
+                   <td>
+                   <img id="target" src="stimuli/soap_map_b0.2_museum_s0.01_sidelit_d136_q4096.jpg">
+                   </td>
+                   
+                   <td>
+                   <img id="match" src="stimuli/soap_map_b0.2_museum_s0.01_sidelit_d74_q4096.jpg">
+                   </td>
+                   
+               </tr>
+           </table>
+        </div>
+        
+        <!--  Loding...  -->
+        <img id="loading_icon" src="img/loading-icon.gif" alt="loading">
+           
+        <div id="density">
+          <h6>Density control:</h6>
+          <!--<input id="densityVal" type="range">-->
+          <div id="densityVal"></div>
+        </div>
+
+       
+        <!-- Progress & "NEXT"/"Start" button-->
+        <div id='nextTrial'>
+           <h5>Progress: Trial </h5><span id="curTrial">0</span>/<span id="totalTrial">0</span><br>
+           
+           <button type="button" id="next" value="Start" class="nextButton" >Start</button>
+        </div>
+        
+        <br>
+        
+        <!--    This is hidded   -->
+        <div id="finalResult">
+           Your final matched densities: <span id="finalResultMatched"></span>
+           <br>
+           Your target densities: <span id="finalResultTarget"></span>
+        </div>
+        
+        
+        <div id = "thankYou" class = "thankYou">
+           <h2>Thank You!</h2>
+        </div>
+</div>
+       
+    <script src="js/main.js"></script>
+
+</body>
+</html>
