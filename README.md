@@ -12,6 +12,6 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 1. Experimental Interface
 
 <div class="image12">
-    <p align="center"> Experimental Interface </strong></p>
+<!--     <p align="center"> Experimental Interface </strong></p> -->
     <p align="center"><img src="img/demo.gif"></p>
 </div>
