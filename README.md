@@ -10,4 +10,4 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 
 ## Usage
 1. Experimental Interface
-![Experimental Interface](img/demo.gif)
+<img src="img/demo.gif" width="400"/> <img src="https://github.com/BumbleBee0819/Real-time-video-abstraction/blob/master/results/Final1.jpg" width="400"/>
