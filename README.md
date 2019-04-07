@@ -11,13 +11,11 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 ## Usage
 1. **Experimental Procedure:** Subjects change the material properties of the match image (right) until it matches the target image (left) by sliding the slider bar with mouse or pressing the left/right arrow keys. During anytime of the experiment, subjects can click the "Show Instruction" button to read the instruction. 
 
-The default subject name is "test". By default, the data are saved as .json files in the folder "results/[subject name]". 
-
-If you want to save the data to MySQL dataset, 
-
 <div class="image12">
 <!--     <p align="center"> Experimental Interface </strong></p> -->
     <p align="center"><img src="img/demo.gif"></p>
 </div>
 
-2. ****
+2. **Save data**: The default subject name is "test". By default, the data are saved as .json files in the folder "results/[subject name]". 
+
+If you want to save the data to MySQL dataset, 
