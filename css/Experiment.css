@@ -1,0 +1,410 @@
+/* =================================
+------------------------------------
+  Asymmetric Matching Experiment
+  Author: Wenyan Bi
+  Date: 03/14/019;
+ ------------------------------------
+ ====================================*/
+
+
+/*----------------------------------------*/
+/* Main Contents
+/*----------------------------------------*/
+
+html,
+body {
+	height: 100%;
+	font-family: 'PT Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: #323232;
+	font-weight: 400; 
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 16px;
+	color: #898d90;
+	line-height: 1.8;  /* line space */
+}
+
+.main_contents {
+	width: 1280px;
+	height: 100%;
+/*	background-color: powderblue;*/	
+	text-align: center;
+	margin: auto auto auto auto;
+}
+
+
+
+/* --------------------------------------------------------------------
+              Pop-up instruction box (not in .main_contents)
+---------------------------------------------------------------------*/
+/* The mask underneath the pop-up box */
+.popup-overlay {
+  /*Hide the pop-up box when there is no "active" class */
+    z-index: 999;
+    width: 100%;  /*The mask will cover the whole page*/
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    position: absolute;				
+    background-color: #BAC4B9;
+    color: #000000;
+    opacity: 0.9;
+}
+
+/* The pop-up box */
+.popup-content {
+  /*Hide the pop-up box when there is no "active" class */
+    display: none;
+    position:absolute;
+    background:#E3E5E2;  /* background color*/
+    border:3px solid #666666;   /* background frame */
+    top: 10%;   /* z-location: larger percent -> downward */
+    width:60%;
+    height:40%;
+    left:20%; 
+    opacity: 0.8;
+    overflow: auto;
+}
+
+.popup-content p{
+	color:#000000;
+}
+
+.popup-overlay.active {
+  /* Display the pop-up box when "active" class is present */
+/*  visibility:visible;*/
+  display: block;
+  text-align:center;
+}
+
+.popup-content.active {
+  /*Shows pop-up content when "active" class is present */
+  display: block;
+}
+
+
+#showInstruction {
+    display: none;
+    float: left;
+}
+
+.showInstruction {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
+	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
+	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
+	background-color:#f9f9f9;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Trebuchet MS;
+	font-size:14px;
+	font-weight:bold;
+	padding:5px 9px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+.showInstruction:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+	background-color:#e9e9e9;
+}
+
+
+
+
+
+.close {
+	-moz-box-shadow: 0px 1px 0px 0px #1c1b18;
+	-webkit-box-shadow: 0px 1px 0px 0px #1c1b18;
+	box-shadow: 0px 0.5px 0px 0px #1c1b18;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6));
+	background:-moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
+	background-color:#eae0c2;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.close:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2));
+	background:-moz-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-webkit-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-o-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-ms-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2',GradientType=0);
+	background-color:#ccc2a6;
+}
+
+
+
+/*.showInstruction {
+  display:inline-block;
+  vertical-align:middle;
+  border-radius:30px;
+  margin:.20rem;
+  font-size: 1rem;
+  color:#666666;
+  background:   #E3E5E2;
+  border:1px solid #7D8A77;
+  opacity: 0.9; 
+  box-shadow: 0 0 5px 0px #7D8A77;
+}
+
+.showInstruction:hover {
+  border:1px solid #666666;
+  background:#666666;
+  color:#ffffff;
+}*/
+
+/* --------------------------------------------------------------------
+                           Instruction
+---------------------------------------------------------------------*/
+.instruction {
+    display:inline-block;
+}
+
+
+.instruction h1 {
+    font-weight: bold;
+    margin-bottom:10px;
+}
+
+.instruction p {
+    color:#347235;
+    text-align:left;
+}
+/* --------------------------------------------------------------------
+                           Paired image stimuli
+---------------------------------------------------------------------*/
+
+
+#demo {
+	margin: auto auto auto auto;
+	width: 50%;
+	height: 50%;
+	border: 10px;
+}
+
+.vid-border{
+  position: relative;
+  height: 70%;
+  width: 70%;
+  border: 5px solid black;
+  overflow: hidden;
+  margin: auto auto auto auto;
+}
+
+
+
+#img_table{
+/*	display:none;
+*/}
+
+
+.img{
+	margin: auto auto auto auto;
+}
+
+.img table, tr, td{
+    border: 0px solid #ddd;
+    width:804;
+    text-align: center;
+}
+
+
+#target{
+    text-align: center;
+}
+
+#match{
+    text-align: center;
+}
+
+
+/* Loading icon */
+#loading_icon{
+	margin: 0 auto 0 auto;
+	display:none;
+}
+
+/* --------------------------------------------------------------------
+                           Density control 
+---------------------------------------------------------------------*/
+/* Density control: text + sliderbar  */
+#density{
+	margin-bottom: 10px; 
+	text-align: center;
+	display: none;
+}
+
+/*slider bar*/
+#densityVal{
+	/*z-index:999;*/  /* To move this element to the top. */
+	margin: 10px;
+	width: 400px;
+	text-align: center;
+}
+
+
+/* --------------------------------------------------------------------
+                        "Start/Next" button
+---------------------------------------------------------------------*/
+
+/* NextTrial: text + button */
+#nextTrial{
+	margin:20 20 10 20;
+	float:center;
+	display:inline;
+}
+
+/* disable auto line break */
+#nextTrial h5{
+	display:inline;
+}
+
+
+/* The next button */
+#next {
+   margin:10 20 10 20;
+   width:120px;
+}
+
+.nextButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+	background: green;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fc8d83), color-stop(1, #e4685d));
+	background:-moz-linear-gradient(top, #fc8d83 5%, #e4685d 100%);
+	background:-webkit-linear-gradient(top, #fc8d83 5%, #e4685d 100%);
+	background:-o-linear-gradient(top, #fc8d83 5%, #e4685d 100%);
+	background:-ms-linear-gradient(top, #fc8d83 5%, #e4685d 100%);
+	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc8d83', endColorstr='#e4685d',GradientType=0);
+	background-color:#fc8d83;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #d83526;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.nextButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e4685d), color-stop(1, #fc8d83));
+	background:-moz-linear-gradient(top, #e4685d 5%, #fc8d83 100%);
+	background:-webkit-linear-gradient(top, #e4685d 5%, #fc8d83 100%);
+	background:-o-linear-gradient(top, #e4685d 5%, #fc8d83 100%);
+	background:-ms-linear-gradient(top, #e4685d 5%, #fc8d83 100%);
+	background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4685d', endColorstr='#fc8d83',GradientType=0);
+	background-color:#e4685d;
+}
+.nextButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* --------------------------------------------------------------------
+                        In-line feedback of the results
+---------------------------------------------------------------------*/
+#finalResult {
+	display:none;
+}
+
+
+
+/* --------------------------------------------------------------------
+                         Thank you page
+---------------------------------------------------------------------*/
+.thankYou {
+	position: absolute;
+	left: 45%;
+	top: 10%;
+	display: none;
+}
+
+.thankYou h2{
+	color:#000000;
+}
+/* --------------------------------------------------------------------
+                                     END                 
+---------------------------------------------------------------------*/
+
+
