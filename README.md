@@ -9,7 +9,7 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 
 
 ## Usage
-1. **Experimental Procedure:** Subjects change the material properties of the match image (right) until it matches the target image (left) by sliding the slider bar with mouse or pressing the left/right arrow keys 
+1. **Experimental Procedure:** Subjects change the material properties of the match image (right) until it matches the target image (left) by sliding the slider bar with mouse or pressing the left/right arrow keys. During anytime of the experiment, subjects can click the "Show Instruction" button to read the instruction. 
 
 <div class="image12">
 <!--     <p align="center"> Experimental Interface </strong></p> -->
