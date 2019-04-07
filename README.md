@@ -10,4 +10,4 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 
 ## Usage
 1. Experimental Interface
-<img src="img/demo.gif" width="400"/> 
+<img src="img/demo.gif" align="center"/> 
