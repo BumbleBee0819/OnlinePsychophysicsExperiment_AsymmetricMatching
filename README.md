@@ -13,5 +13,5 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 
 <div class="image12">
     <p align="center"> Experimental Interface </strong></p>
-    <img src="img/demo.gif" style="float:left; align:right">
+    <img src="img/demo.gif" style="float:center; align:right">
 </div>
