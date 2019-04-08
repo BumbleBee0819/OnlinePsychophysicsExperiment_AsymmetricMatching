@@ -12,9 +12,9 @@ This folder contains the codes for the online asymmetric matching experiment. We
 
 ## Dependencies
 The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with:
-* PHP 5.6.30 
-* MySQL 5.6.37
-* jQuery 1.12.4, minified
+* [PHP 5.6.30](https://www.php.net/releases/5_6_30.php) 
+* [MySQL 5.6.37](https://dev.mysql.com/doc/relnotes/mysql/5.6/en/news-5-6-37.html)
+* [jQuery 1.12.4, minified](https://blog.jquery.com/2016/05/20/jquery-1-12-4-and-2-2-4-released/)
 
 
 ## Usage
@@ -50,13 +50,13 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
       ``` 
 
 3. **Folder description:**
-* [conditions](conditions/): The condition files for each subject. Will be automatically generated for the new subjects.
-* [conditions](css/): Main style sheet.
-* [img](img/): Images that be used in HTML.
-* [js](js/): Main Javascript.
-* [modulus](modulus/): Php codes.
-* [results](results/): Stores the saved .json data files (when `var dataSaveFile = 'modulus/@WriteDataJSON.php'`).
-* [stimuli](stimuli/): Image stimuli that are used in the experiment.
+    * [conditions](conditions/): The condition files for each subject. Will be automatically generated for the new subjects.
+    * [conditions](css/): Main style sheet.
+    * [img](img/): Images that be used in HTML.
+    * [js](js/): Main Javascript.
+    * [modulus](modulus/): Php codes.
+    * [results](results/): Stores the saved .json data files (when `var dataSaveFile = 'modulus/@WriteDataJSON.php'`).
+    * [stimuli](stimuli/): Image stimuli that are used in the experiment.
 
 
 4. **Using Localhost:** The codes can be run locally using [Ampps](https://www.ampps.com/downloads). After downloading the software, open terminal to setup AMPPS localhost:
