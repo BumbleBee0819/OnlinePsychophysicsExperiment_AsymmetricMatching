@@ -50,7 +50,7 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
       ``` 
 
 3. **Folder description:**
-    ** [conditions](conditions/): The condition files for each subject. Will be automatically generated for the new subjects.
+    * [conditions](conditions/): The condition files for each subject. Will be automatically generated for the new subjects.
     * [conditions](css/): Main style sheet.
     * [img](img/): Images that be used in HTML.
     * [js](js/): Main Javascript.
