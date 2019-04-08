@@ -56,7 +56,7 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 
 
 4. **Using Localhost:** The codes can be run locally using [Ampps](https://www.ampps.com/downloads). After downloading the software, open terminal to setup AMPPS localhost:
-      ```python
+      ```bash
       # MacOS configuration:
       ln -s [Path/To/Online_AsymmetricMatchingExperiment/Folder] /Applications/AMPPS/www
       ```
