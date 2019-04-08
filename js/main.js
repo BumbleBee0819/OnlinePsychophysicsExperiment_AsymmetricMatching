@@ -14,9 +14,8 @@
  * 5) When the experiment ends, data can be either saved as seperate "json" files; or stores in a MySQL database.
  * 
  * 
- * Wenyan Bi 
- *
- * wb1918a@american.edu
+ * Wenyan Bi <wb1918a@american.edu>
+ * Bei Xiao <bei.xiao@american.edu>
  *
  * @2019.04.07
  */
