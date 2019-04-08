@@ -40,6 +40,9 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
       ```
    -  To export data from the dataset. In terminal:
       ```bash
+      SELECT * FROM [TableName: $table] INTO OUTFILE [Absolute path: e.g., '/Users/Fiona/tmp.txt']
+      FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+      LINES TERMINATED BY '\r\n';
       ``` 
 
 3. **Folder description:**
