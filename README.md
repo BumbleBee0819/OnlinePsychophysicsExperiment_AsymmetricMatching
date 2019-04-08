@@ -1,3 +1,7 @@
+[![GitHub Issues](https://img.shields.io/github/issues/anfederico/Clairvoyant.svg)](https://github.com/anfederico/Clairvoyant/issues)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 # Online Psychophysics Experiment: Asymmetric Matching Experiment
 This folder contains the codes for the online asymmetric matching experiment. We used the codes to collect data for our paper [Does geometric sharpness affect perception of translucent material perception?](https://scholar.google.com/scholar?cluster=14656285582704001098&hl=en&oi=scholarr).
 
@@ -34,6 +38,7 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
       $table = "Trans_matching_data";  // [wb]: Table name
       ```
    -  To export data from the dataset.
+
 3. **Folder description:**
 * [conditions](conditions/): The condition files for each subject. Will be automatically generated for the new subjects.
 * [conditions](css/): Main style sheet.
@@ -42,3 +47,5 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 * [modulus](modulus/): Php codes.
 * [results](results/): Stores the saved .json data files (when `var dataSaveFile = 'modulus/@WriteDataJSON.php'`).
 * [stimuli](stimuli/): Image stimuli that are used in the experiment.
+
+4. **Local test:** The codes can be tested locally using [Ampps](https://www.ampps.com/downloads). After downloading the software, in terminal:
