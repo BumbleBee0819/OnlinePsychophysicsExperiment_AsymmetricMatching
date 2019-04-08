@@ -34,4 +34,4 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
       $table = "Trans_matching_data";  // [wb]: Table name
       ```
 3. **Folder description **:
-* [results](results/): Stores the saved .json data files (var dataSaveFile = 'modulus/@WriteDataJSON.php';).
+* [results](results/): Stores the saved .json data files (when var dataSaveFile = 'modulus/@WriteDataJSON.php').
