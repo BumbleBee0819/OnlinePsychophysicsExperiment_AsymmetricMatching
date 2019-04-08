@@ -16,11 +16,9 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
     <p align="center"><img src="img/demo.gif"></p>
 </div>
 
-2. **Save data**: The default subject name is "test". By default, the data are saved as .json files in the folder "results/[subject name]". <br/><br/>If you want to save the data to MySQL dataset, in "js/main.js", change 
-```javascript
-var dataSaveFile = 'modulus/@WriteDataJSON.php';
-```
-to 
-```javascript
-var dataSaveFile = 'modulus/@WriteDataSQL.php';
+2. **Save data**: The default subject name is "test". By default, the data are saved as .json files in the folder "results/[subject name]". <br/><br/>If you want to save the data to MySQL dataset, in "js/main.js", use 
+
+```javascript 
+//var dataSaveFile = 'modulus/@WriteDataJSON.php'; 
+var dataSaveFile = 'modulus/@WriteDataSQL.php'; 
 ```
