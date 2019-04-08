@@ -24,3 +24,8 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
       var dataSaveFile = 'modulus/@WriteDataSQL.php'; 
       ```
    - In "[modulus/Database_config.php](modulus/@Database_config.php)" 
+   
+      ```php 
+      //var dataSaveFile = 'modulus/@WriteDataJSON.php'; 
+      var dataSaveFile = 'modulus/@WriteDataSQL.php'; 
+      ```
