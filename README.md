@@ -22,4 +22,4 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 //var dataSaveFile = 'modulus/@WriteDataJSON.php'; 
 var dataSaveFile = 'modulus/@WriteDataSQL.php'; 
 ```
-Some Markdown text with <span style="color:blue">some *blue* text</span>.
+# 2014, The year of [Blue](#)
