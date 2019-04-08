@@ -6,7 +6,7 @@
  * This file will create condition file for the experiment. 
  * Condition file is saved in 'conditions/[subject]/block[i].json'
  * @author Wenyan Bi <wb1918a@american.edu>
- * @copyright 2019.03 Wenyan
+ * @2019.03.28
  */
 
 

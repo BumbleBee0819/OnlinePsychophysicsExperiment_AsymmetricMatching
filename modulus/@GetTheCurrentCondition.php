@@ -3,10 +3,10 @@
 /**
  * @GetTheCurrentCondition.php
  *
- * This file will create condition file for the experiment. 
+ * This file will fetch the condition file for the current block. 
  * Condition file is saved in 'conditions/[subject]/block[i].json'
  * @author Wenyan Bi <wb1918a@american.edu>
- * @copyright 2019.03 Wenyan
+ * @2019.03.28
  */
 
 

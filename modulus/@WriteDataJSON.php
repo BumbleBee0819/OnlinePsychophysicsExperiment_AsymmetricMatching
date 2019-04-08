@@ -6,7 +6,7 @@
  * This file will save data to "results/[sub]" folder as .json files. 
  *
  * @author Wenyan Bi <wb1918a@american.edu>
- * @copyright 2019.03 Wenyan
+ * @2019.03.28
  */
 
 // ---------------------------------------------------------//

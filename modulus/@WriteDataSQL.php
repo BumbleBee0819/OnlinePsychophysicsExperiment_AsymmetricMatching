@@ -7,7 +7,7 @@
  * Will call "@Database_config.php"
 
  * @author Wenyan Bi <wb1918a@american.edu>
- * @copyright 2019.03 Wenyan
+ * @2019.03.28
  */
 
 
