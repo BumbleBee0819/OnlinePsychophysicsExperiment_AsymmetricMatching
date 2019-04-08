@@ -49,7 +49,7 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 * [results](results/): Stores the saved .json data files (when `var dataSaveFile = 'modulus/@WriteDataJSON.php'`).
 * [stimuli](stimuli/): Image stimuli that are used in the experiment.
 
-<br>
+
 4. **Using Localhost:** The codes can be run locally using [Ampps](https://www.ampps.com/downloads). After downloading the software, open terminal to setup AMPPS localhost:
       ```python
       # MacOS configuration:
