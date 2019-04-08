@@ -1,6 +1,4 @@
-<p align="center"><img width=12.5% src="stimuli/soap_map_b0.2_museum_s0.01_backlit_d136_q4096.jpg"></p>
-<p align="center"><img width=12.5% src="stimuli/soap_map_b0.2_museum_s0.01_backlit_d249_q4096.jpg"></p>
-<p align="center"><img width=12.5% src="stimuli/soap_map_b0.4_museum_s0.05_sidelit_d74_q4096.jpg"></p>
+<p align="center"><img width=12.5% src="stimuli/soap_map_b0.2_museum_s0.01_backlit_d136_q4096.jpg"><img width=12.5% src="stimuli/soap_map_b0.2_museum_s0.01_backlit_d249_q4096.jpg"><img width=12.5% src="stimuli/soap_map_b0.4_museum_s0.05_sidelit_d74_q4096.jpg"></p>
 
 
 [![GitHub Issues](https://img.shields.io/github/issues/anfederico/Clairvoyant.svg)](https://github.com/BumbleBee0819/Online_AsymmetricMatchingExperiment/issues)
