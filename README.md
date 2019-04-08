@@ -23,9 +23,13 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
       //var dataSaveFile = 'modulus/@WriteDataJSON.php'; 
       var dataSaveFile = 'modulus/@WriteDataSQL.php'; 
       ```
-   - In "[modulus/Database_config.php](modulus/@Database_config.php)" 
+   - In "[modulus/Database_config.php](modulus/@Database_config.php)", set your SQL configuration:
    
       ```php 
-      //var dataSaveFile = 'modulus/@WriteDataJSON.php'; 
-      var dataSaveFile = 'modulus/@WriteDataSQL.php'; 
+      $servername = "localhost";
+      //$port=3306;
+      $username = "root";
+      $password = "mysql";
+      $dbname = "myResults";            // [wb]: Database name
+      $table = "Trans_matching_data";  // [wb]: Table name
       ```
