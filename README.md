@@ -35,4 +35,9 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
       ```
 3. **Folder description **:
 * [conditions](conditions/): The condition files for each subject. Will be automatically generated for the new subjects.
+* [conditions](css/): Main style sheet.
+* [img](img/): Images that be used in HTML.
+* [js](js/): Main javascript.
+* [modulus](modulus/): Php codes.
 * [results](results/): Stores the saved .json data files (when `var dataSaveFile = 'modulus/@WriteDataJSON.php'`).
+* [stimuli](stimuli/): Image stimuli that are used in the experiment.
