@@ -34,4 +34,5 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
       $table = "Trans_matching_data";  // [wb]: Table name
       ```
 3. **Folder description **:
+* [conditions](conditions/): The condition files for each subject. Will be automatically generated for the new subjects.
 * [results](results/): Stores the saved .json data files (when `var dataSaveFile = 'modulus/@WriteDataJSON.php'`).
