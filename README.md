@@ -38,7 +38,9 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
       $dbname = "myResults";            // [wb]: Database name
       $table = "Trans_matching_data";  // [wb]: Table name
       ```
-   -  To export data from the dataset.
+   -  To export data from the dataset. In terminal:
+      ```bash
+      ``` 
 
 3. **Folder description:**
 * [conditions](conditions/): The condition files for each subject. Will be automatically generated for the new subjects.
@@ -51,7 +53,7 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 
 
 4. **Using Localhost:** The codes can be run locally using [Ampps](https://www.ampps.com/downloads). After downloading the software, open terminal to setup AMPPS localhost:
-      ```python
+      ```bash
       # MacOS configuration:
       ln -s [Path/To/Online_AsymmetricMatchingExperiment/Folder] /Applications/AMPPS/www
       ```
