@@ -4,10 +4,10 @@
 
 # Online Psychophysics Experiment: Asymmetric Matching Experiment
 
+This folder contains the codes for the online asymmetric matching experiment. We used the codes to collect data for our paper [Does geometric sharpness affect perception of translucent material perception?](https://scholar.google.com/scholar?cluster=14656285582704001098&hl=en&oi=scholarr).
+
 <p align="center"><img width=25% src="stimuli/soap_map_b0.2_museum_s0.01_backlit_d136_q4096.jpg"><img width=25% src="stimuli/soap_map_b0.2_museum_s0.01_backlit_d249_q4096.jpg"><img width=25% src="stimuli/soap_map_b0.4_museum_s0.05_sidelit_d74_q4096.jpg"><img width=25% src="stimuli/soap_map_b0.2_museum_s0.01_backlit_d82_q4096.jpg">
 </p>
-
-This folder contains the codes for the online asymmetric matching experiment. We used the codes to collect data for our paper [Does geometric sharpness affect perception of translucent material perception?](https://scholar.google.com/scholar?cluster=14656285582704001098&hl=en&oi=scholarr).
 
 ## Dependencies
 The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with:
