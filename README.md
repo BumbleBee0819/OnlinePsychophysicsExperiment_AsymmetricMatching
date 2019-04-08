@@ -2,7 +2,7 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-<h1> Online Psychophysics Experiment: Asymmetric Matching Experiment </h1>
+<h1> Online Psychophysics: Asymmetric Matching Experiment </h1>
 
 <p align="center"><img width=25% src="stimuli/soap_map_b0.2_museum_s0.01_backlit_d136_q4096.jpg"><img width=25% src="stimuli/soap_map_b0.2_museum_s0.01_backlit_d249_q4096.jpg"><img width=25% src="stimuli/soap_map_b0.4_museum_s0.05_sidelit_d74_q4096.jpg"><img width=25% src="stimuli/soap_map_b0.2_museum_s0.01_backlit_d82_q4096.jpg">
 
