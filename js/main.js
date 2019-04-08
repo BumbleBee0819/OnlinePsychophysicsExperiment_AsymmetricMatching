@@ -445,9 +445,6 @@ $(window).load(function() {
 //                $('#finalresult').text(tmpMatchingDensity); //[wb]: For debugging.
             }
         }
-
-    
-// end of the whole codes
 });
 
 
