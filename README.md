@@ -49,4 +49,7 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 * [results](results/): Stores the saved .json data files (when `var dataSaveFile = 'modulus/@WriteDataJSON.php'`).
 * [stimuli](stimuli/): Image stimuli that are used in the experiment.
 
-4. **Local test:** The codes can be tested locally using [Ampps](https://www.ampps.com/downloads). After downloading the software, in terminal:
+4. **Local test:** The codes can be tested locally using [Ampps](https://www.ampps.com/downloads). After downloading the software, open terminal to setup AMPPS localhostin:
+```text
+ln -s [Path/To/Online_AsymmetricMatchingExperiment/Folder] /Applications/AMPPS/www
+```
