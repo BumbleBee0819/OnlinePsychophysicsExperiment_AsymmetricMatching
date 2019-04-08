@@ -50,6 +50,7 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
 * [stimuli](stimuli/): Image stimuli that are used in the experiment.
 
 4. **Local test:** The codes can be tested locally using [Ampps](https://www.ampps.com/downloads). After downloading the software, open terminal to setup AMPPS localhost:
-```python
-ln -s [Path/To/Online_AsymmetricMatchingExperiment/Folder] /Applications/AMPPS/www
-```
+      ```python
+      // MacOS configuration:
+      ln -s [Path/To/Online_AsymmetricMatchingExperiment/Folder] /Applications/AMPPS/www
+      ```
