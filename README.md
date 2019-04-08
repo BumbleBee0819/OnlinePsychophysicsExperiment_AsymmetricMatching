@@ -12,9 +12,9 @@ This folder contains the codes for the online asymmetric matching experiment. We
 
 ## Dependencies
 The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with:
-* PHP 5.6.30 
-* MySQL 5.6.37
-* jQuery 1.12.4, minified
+* [PHP 5.6.30](https://www.php.net/releases/5_6_30.php) 
+* [MySQL 5.6.37](https://dev.mysql.com/doc/relnotes/mysql/5.6/en/news-5-6-37.html)
+* [jQuery 1.12.4, minified](https://blog.jquery.com/2016/05/20/jquery-1-12-4-and-2-2-4-released/)
 
 
 ## Usage
