@@ -15,7 +15,6 @@
  * 
  * 
  * Wenyan Bi <wb1918a@american.edu>
- * Bei Xiao <bei.xiao@american.edu>
  *
  * @2019.04.07
  */
