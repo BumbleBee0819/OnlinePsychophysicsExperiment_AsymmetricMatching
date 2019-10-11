@@ -6,7 +6,7 @@
 
 <p align="center"><img width=25% src="stimuli/soap_map_b0.4_museum_s0.01_backlit_d136_q4096.jpg"><img width=25% src="stimuli/soap_map_b1.0_museum_s0.01_backlit_d249_q4096.jpg"><img width=25% src="stimuli/soap_map_b2.8_museum_s0.05_sidelit_d74_q4096.jpg"><img width=25% src="stimuli/soap_map_b0.4_museum_s0.01_backlit_d82_q4096.jpg">
 
-This folder contains the codes for the online asymmetric matching experiment. We used the codes to collect data for our paper [Effect of Geometric Sharpness on Translucent Material Perception](https://www.biorxiv.org/content/10.1101/795294v1?rss=1).
+This folder contains the codes for the online asymmetric matching experiment, which are used in our paper [Effect of Geometric Sharpness on Translucent Material Perception](https://www.biorxiv.org/content/10.1101/795294v1?rss=1).
 
 </p>
 
