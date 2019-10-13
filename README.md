@@ -1,4 +1,4 @@
-[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://github.com/BumbleBee0819/PsychophysicsExperiment_PairedComparison/issues/)
+[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://github.com/BumbleBee0819/OnlinePsychophysicsExperiment_AsymmetricMatching/issues/)
 [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![JavaScript](https://img.shields.io/badge/language-JavaScript-red.svg)]()
 [![PHP](https://img.shields.io/badge/language-PHP-red.svg)]()
