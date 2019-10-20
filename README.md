@@ -70,4 +70,4 @@ The codes are written in HTML/CSS/Javascript/PHP/MySQL and have been tested with
       ln -s [Path/To/Online_AsymmetricMatchingExperiment/Folder] /Applications/AMPPS/www
       ```
 ## Contact
-If you have any questions, please contact "wb1918a@american.edu" or "bxiao@american.edu".
+If you have any questions, please contact "wb1918a@american.edu".
