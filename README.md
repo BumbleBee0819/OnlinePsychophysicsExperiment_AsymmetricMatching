@@ -3,9 +3,9 @@
 [![JavaScript](https://img.shields.io/badge/language-JavaScript-red.svg)]()
 [![PHP](https://img.shields.io/badge/language-PHP-red.svg)]()
 [![SQL](https://img.shields.io/badge/language-SQL-red.svg)]()
-[Total visitor](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=translucency)
-[Visitors in today](https://visitor-count-badge.herokuapp.com/today.svg?repo_id=translucency)
-
+![Total visitor](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=translucency)
+![Visitors in today](https://visitor-count-badge.herokuapp.com/today.svg?repo_id=translucency)
+> since 2019-10-13
 
 <h1> Online Psychophysics Experiment: Asymmetric Matching </h1>
 
