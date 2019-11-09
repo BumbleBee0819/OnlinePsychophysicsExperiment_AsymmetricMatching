@@ -5,6 +5,8 @@
 [![SQL](https://img.shields.io/badge/language-SQL-red.svg)]()
 ![Total visitor](https://visitor-count-badge.herokuapp.com/total.svg?repo_id=translucency)
 ![Visitors in today](https://visitor-count-badge.herokuapp.com/today.svg?repo_id=translucency)
+> Author: Wenyan Bi
+
 > since 2019-10-13
 
 <h1> Online Psychophysics Experiment: Asymmetric Matching </h1>
